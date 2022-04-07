@@ -17,7 +17,7 @@ const SearchComponent = () => {
           <View style={styles.borderStyle}>
             <TextInput style={styles.inputStyle} placeholder="Search here"></TextInput>
           </View>
-          <TouchableOpacity style={styles.buttonStyle}>
+          <TouchableOpacity style={styles.buttonStyle} onPress = {() => navigation.navigate("Detail")}>
             <Text style={styles.buttonText}>Search</Text>
           </TouchableOpacity>
         </View>

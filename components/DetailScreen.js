@@ -13,7 +13,7 @@ import { Text,
 
 import SearchComponent from './SearchComponent';
 
-const DetailScreen = () => {
+const DetailScreen = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.fullContainer}>
       <View>

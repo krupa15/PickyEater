@@ -7,6 +7,7 @@ import img from './components/img/Mobile-Homescreen.jpg';
 import HomeScreen from './components/HomeScreen';
 import DetailScreen from './components/DetailScreen.js';
 
+const Stack = createNativeStackNavigator();
 export default function App() {
   /*const componentDidMount = () => {
     setTimeout(() => {
@@ -15,9 +16,12 @@ export default function App() {
     <Image style={styles.homeScreen} source={require('./components/img/Mobile-Homescreen.jpg')} />
   };*/
   return (
-    <View>
-      <DetailScreen />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{headerShown: false}}>
+        <Stack.Screen name="Home" component={HomeScreen}/>
+        <Stack.Screen name="Detail" component={DetailScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
   
 }
@@ -27,4 +31,7 @@ const styles = StyleSheet.create({
     width: Dimensions.get('window').width,
     height: Dimensions.get('window').height,
   }*/
+  navigationContainer: {
+    backgroundColor: 'white',
+  }
 });
