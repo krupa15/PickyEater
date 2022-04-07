@@ -1,21 +1,30 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from 'react';
+import { Text, View, StyleSheet, Image, Dimensions } from 'react-native';
+import { NavigationContainer, NavigationActions } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import img from './components/img/Mobile-Homescreen.jpg';
+import HomeScreen from './components/HomeScreen';
+import DetailScreen from './components/DetailScreen.js';
 
 export default function App() {
+  /*const componentDidMount = () => {
+    setTimeout(() => {
+      NavigationActions.navigate('homeScreen'); 
+    }, 2000); 
+    <Image style={styles.homeScreen} source={require('./components/img/Mobile-Homescreen.jpg')} />
+  };*/
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View>
+      <DetailScreen />
     </View>
   );
+  
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  /**homeScreen: {
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').height,
+  }*/
 });

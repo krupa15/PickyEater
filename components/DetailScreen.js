@@ -11,9 +11,14 @@ import { Text,
         FlatList 
 } from 'react-native';
 
+import SearchComponent from './SearchComponent';
+
 const DetailScreen = () => {
   return (
     <SafeAreaView style={styles.fullContainer}>
+      <View>
+        <SearchComponent />
+      </View>
       <View style={styles.searchSection}>
         <Image style={styles.imgStyle} source={require('./img/dummy.jpg')} />
       </View>
@@ -41,20 +46,17 @@ const styles = StyleSheet.create({
     width: Dimensions.get('window').width,
   },
   nameStyle: {
-    fontFamily: 'Century Gothic',
     fontSize: 18,
-    fontWeight: 800,
+    fontWeight: "bold",
     marginLeft: 10,
     marginTop: 3,
   },
   typeStyle: {
-    fontFamily: 'Century Gothic',
     fontSize: 14,
-    fontWeight: 800,
+    fontWeight: "bold",
     marginLeft: 10,
   },
   calIngStyle: {
-    fontFamily: 'Century Gothic',
     marginLeft: 10,
   },
   bottomBtn: {
@@ -65,9 +67,8 @@ const styles = StyleSheet.create({
   },
   bottomTxt: {
     color: 'white',
-    fontFamily: 'Century Gothic',
     fontSize: 16,
-    fontWeight: 800,
+    fontWeight: "bold"
   },
   bottomFix: {
     position: 'absolute',

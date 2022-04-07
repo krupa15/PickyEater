@@ -23,16 +23,12 @@ const styles = StyleSheet.create({
   },
   itemName: {
     fontSize: 14,
-    fontFamily: "Century Gothic",
-    fontWeight: 800,
+    fontWeight: "bold",
   },
   itemType: {
     fontSize: 12,
-    fontFamily: "Century Gothic",
-    fontWeight: 800,
   },
   itemCalIng: {
-    fontFamily: "Century Gothic", 
   }
 });
 
