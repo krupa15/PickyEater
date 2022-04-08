@@ -1,14 +1,11 @@
-import * as React from 'react';
+import React, {Component} from 'react';
 import { Text,
-        TextInput,
         View,
         StyleSheet,
         Image,
         Dimensions,
-        ScrollView,
         SafeAreaView,
         TouchableOpacity,
-        FlatList 
 } from 'react-native';
 
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
@@ -20,35 +17,37 @@ import Nutritions from './Nutritions';
 
 const Tab = createMaterialTopTabNavigator();
 
-const DetailScreen = ({ navigation }) => {
-  return (
-    <SafeAreaView style={styles.fullContainer}>
-      <View>
-        <SearchComponent />
-      </View>
-      <View style={styles.searchSection}>
-        <Image style={styles.imgStyle} source={require('./img/dummy.jpg')} />
-      </View>
-      <View>
-        <Text style={styles.nameStyle}> Apple Elixir Recipe </Text>
-        <Text style={styles.typeStyle}> Vegan | Vegetarian </Text>
-        <Text style={styles.calIngStyle}> 1530 Calories | 5 Ingredients </Text>
-      </View>
-      <Tab.Navigator style={styles.tabNavigation} screenOptions={{
-        tabBarActiveTintColor: '#10C146',
-        tabBarInactiveTintColor: '#ccc',
-        }}>
-        <Tab.Screen name='Health Label' component={HealthLabels}/>
-        <Tab.Screen name='Nutritions' component={Nutritions}/>
-        <Tab.Screen name='Ingredients' component={Ingredients}/>
-      </Tab.Navigator>
-      <View style={styles.bottomFix}>
-        <TouchableOpacity style={styles.bottomBtn}>
-          <Text style={styles.bottomTxt}> SEE FULL RECIPE </Text>
-        </TouchableOpacity>
-      </View> 
-    </SafeAreaView>
-  );
+class DetailScreen extends Component {
+  render() {
+    return (
+      <SafeAreaView style={styles.fullContainer}>
+        <View>
+          <SearchComponent />
+        </View>
+        <View style={styles.searchSection}>
+          <Image style={styles.imgStyle} source={require('./img/dummy.jpg')} />
+        </View>
+        <View>
+          <Text style={styles.nameStyle}> Apple Elixir Recipe </Text>
+          <Text style={styles.typeStyle}> Vegan | Vegetarian </Text>
+          <Text style={styles.calIngStyle}> 1530 Calories | 5 Ingredients </Text>
+        </View>
+        <Tab.Navigator style={styles.tabNavigation} screenOptions={{
+          tabBarActiveTintColor: '#10C146',
+          tabBarInactiveTintColor: '#ccc',
+          }}>
+          <Tab.Screen name='Health Label' component={HealthLabels}/>
+          <Tab.Screen name='Nutritions' component={Nutritions}/>
+          <Tab.Screen name='Ingredients' component={Ingredients}/>
+        </Tab.Navigator>
+        <View style={styles.bottomFix}>
+          <TouchableOpacity style={styles.bottomBtn}>
+            <Text style={styles.bottomTxt}> SEE FULL RECIPE </Text>
+          </TouchableOpacity>
+        </View> 
+      </SafeAreaView>
+    );
+  }
 }
 
 const styles = StyleSheet.create({

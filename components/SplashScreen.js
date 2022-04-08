@@ -1,7 +1,7 @@
-import * as React from 'react';
+import React, {Component} from 'react';
 import { View, StyleSheet, Image, Dimensions } from 'react-native';
 
-class SplashScreen extends React.Component {
+class SplashScreen extends Component {
   render() {
   return (
     <View style= {styles.container}>

@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { Text, View, StyleSheet, ScrollView } from 'react-native';
+import React, {Component} from 'react';
+import { View, StyleSheet, ScrollView } from 'react-native';
 import { Table, Row} from 'react-native-table-component';
 
-class Nutritions extends React.Component {
+class Nutritions extends Component {
   render() {
   const state = this.state;
   const tableData = [];

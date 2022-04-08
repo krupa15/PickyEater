@@ -1,13 +1,8 @@
-import * as React from 'react';
-import { Text,
-        TextInput,
-        View,
+import React, {Component} from 'react';
+import { View,
         StyleSheet,
-        Image,
-        Dimensions,
         ScrollView,
         SafeAreaView,
-        TouchableOpacity,
         FlatList 
 } from 'react-native';
 
@@ -27,22 +22,24 @@ const recipes = [
   { name: "Peanut Butter Cookies", type: "Vegan | Kidney-Friendly", calories: "854 Calories", ingredients: "10 Ingredients", itemImg: StaticImg},
 ];
 
-const HomeScreen = ({ navigation }) => {
-  return (
-    <SafeAreaView style={styles.container}>
-      <View>
-        <SearchComponent />
-      </View>
-      <ScrollView>
-        <FlatList
-          numColumns={2} 
-          data={recipes}
-          keyExtractor={(item, index) => index.toString()}
-          renderItem= {( {item} ) => (<ListItem recipes={item}/>)}>
-        </FlatList>
-      </ScrollView>
-    </SafeAreaView>
-  );
+class HomeScreen extends Component {
+  render() {
+    return (
+      <SafeAreaView style={styles.container}>
+        <View>
+          <SearchComponent />
+        </View>
+        <ScrollView>
+          <FlatList
+            numColumns={2} 
+            data={recipes}
+            keyExtractor={(item, index) => index.toString()}
+            renderItem= {( {item} ) => (<ListItem recipes={item}/>)}>
+          </FlatList>
+        </ScrollView>
+      </SafeAreaView>
+    );
+  } 
 }
 
 const styles = StyleSheet.create({

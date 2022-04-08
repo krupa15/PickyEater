@@ -1,7 +1,7 @@
-import * as React from 'react';
-import { Text, View, StyleSheet, Image, Dimensions } from 'react-native';
+import React, {Component} from 'react';
+import { Text, View, StyleSheet, Image } from 'react-native';
 
-class ListItem extends React.Component {
+class ListItem extends Component {
   render() {
     const { name, type, calories, ingredients, itemImg} = this.props.recipes 
   return (

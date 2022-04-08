@@ -1,28 +1,25 @@
-import * as React from 'react';
+import React, {Component} from 'react';
 import { Text,
         TextInput,
         View,
         StyleSheet,
         Image,
-        Dimensions,
-        ScrollView,
-        SafeAreaView,
         TouchableOpacity,
 } from 'react-native';
 
-const SearchComponent = () => {
+class SearchComponent extends Component {
+  render() {
     return (
-        <View style={styles.searchSection}>
-          <Image style={styles.logo} source={require('./img/logo.png')} />
-          <View style={styles.borderStyle}>
-            <TextInput style={styles.inputStyle} placeholder="Search here"></TextInput>
-          </View>
-          <TouchableOpacity style={styles.buttonStyle} onPress = {() => navigation.navigate("Detail")}>
+      <View style={styles.searchSection}>
+        <><Image style={styles.logo} source={require('./img/logo.png')} /><View style={styles.borderStyle}>
+          <TextInput style={styles.inputStyle} placeholder="Search here"></TextInput>
+        </View><TouchableOpacity style={styles.buttonStyle} onPress={() => navigation.navigate("Detail")}>
             <Text style={styles.buttonText}>Search</Text>
-          </TouchableOpacity>
-        </View>
+          </TouchableOpacity></>
+      </View>
     );
-  }
+  }   
+}
   
   const styles = StyleSheet.create({
     container: {
