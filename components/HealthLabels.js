@@ -1,45 +1,55 @@
 import * as React from 'react';
-import { Text, View, StyleSheet, Dimensions } from 'react-native';
-import { Table, TableWrapper, Row, Rows, Col, Cols, Cell} from 'react-native-table-component';
+import { Text, View, StyleSheet, ScrollView } from 'react-native';
+import { Table, Row} from 'react-native-table-component';
 
 class HealthLabels extends React.Component {
-constructor(props) {
-    super(props);
-    this.state = {
-        tableHead: ['', 'Head1', 'Head2', 'Head3'],
-        tableTitle: ['Title', 'Title2', 'Title3', 'Title4'],
-        tableData: [
-        ['1', '2', '3'],
-        ['a', 'b', 'c'],
-        ['1', '2', '3'],
-        ['a', 'b', 'c']
-        ]
-    }
-    }
   render() {
   const state = this.state;
+  const tableData = [];
+    for (let i = 0; i < 30; i += 1) {
+      const rowData = [];
+      for (let j = 0; j < 2; j += 1) {
+        rowData.push(`${i}${j}`);
+      }
+      tableData.push(rowData);
+    }
   return (
-    <View style= {styles.listContainer}>
-      <Table borderStyle={{borderWidth: 1}}>
-          <Row data={state.tableHead} flexArr={[1, 2, 1, 1]} style={styles.head} textStyle={styles.text}/>
-          <TableWrapper style={styles.wrapper}>
-            <Col data={state.tableTitle} style={styles.title} heightArr={[28,28]} textStyle={styles.text}/>
-            <Rows data={state.tableData} flexArr={[2, 1, 1]} style={styles.row} textStyle={styles.text}/>
-          </TableWrapper>
-        </Table>
+    <ScrollView style = {styles.container}>
+        <View style= {styles.tableContainer}>
+            <Table borderStyle={{borderWidth: 1, borderColor: '#ebebeb'}}>
+                {
+                  tableData.map((rowData, index) => (
+                    <Row
+                      key={index}
+                      data={rowData}
+                      style={[styles.rowHeight, index%2 && {backgroundColor: 'white'}]}
+                      textStyle={styles.textCustom}
+                    />
+                  ))
+                }
+            </Table>
     </View>
+    </ScrollView>
   );
   }
 }
 
 const styles = StyleSheet.create({
-  listContainer: {
-    margin: 5,  
-  },
-  itemName: {
-    fontSize: 14,
-    fontWeight: "bold",
-  },
+    container: {
+        backgroundColor: 'white'
+    },
+    tableContainer: {
+        margin: 15,
+        marginBottom: 50  
+    },
+    rowHeight: {
+        height: 46,
+        backgroundColor: '#d9ffe4'
+    },
+    textCustom: {
+        textAlign: 'center',
+        fontSize: 16,
+    }
 });
 
 export default HealthLabels;
