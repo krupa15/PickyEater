@@ -11,7 +11,14 @@ import { Text,
         FlatList 
 } from 'react-native';
 
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+
 import SearchComponent from './SearchComponent';
+import HealthLabels from './HealthLabels';
+import Ingredients from './Ingredients';
+import Nutritions from './Nutritions';
+
+const Tab = createMaterialTopTabNavigator();
 
 const DetailScreen = ({ navigation }) => {
   return (
@@ -27,8 +34,14 @@ const DetailScreen = ({ navigation }) => {
         <Text style={styles.typeStyle}> Vegan | Vegetarian </Text>
         <Text style={styles.calIngStyle}> 1530 Calories | 5 Ingredients </Text>
       </View>
-      <ScrollView>
-      </ScrollView>
+      <Tab.Navigator style={styles.tabNavigation} screenOptions={{
+        tabBarActiveTintColor: '#10C146',
+        tabBarInactiveTintColor: '#ccc',
+        }}>
+        <Tab.Screen name='Health Label' component={HealthLabels}/>
+        <Tab.Screen name='Nutritions' component={Nutritions}/>
+        <Tab.Screen name='Ingredients' component={Ingredients}/>
+      </Tab.Navigator>
       <View style={styles.bottomFix}>
         <TouchableOpacity style={styles.bottomBtn}>
           <Text style={styles.bottomTxt}> SEE FULL RECIPE </Text>
@@ -41,6 +54,7 @@ const DetailScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   fullContainer: {
     height: Dimensions.get('window').height,
+    backgroundColor: 'white'
   },
   imgStyle: {
     width: Dimensions.get('window').width,
@@ -73,6 +87,9 @@ const styles = StyleSheet.create({
   bottomFix: {
     position: 'absolute',
     bottom: 0,
+  },
+  tabNavigation: {
+    marginTop: 20,
   }
 });
 
