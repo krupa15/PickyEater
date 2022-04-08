@@ -12,8 +12,6 @@ import { Text,
 } from 'react-native';
 
 import ListItem from './listItem';
-import logo from './img/logo.png';
-import dummyImg from './img/dummy.jpg';
 import SearchComponent from './SearchComponent';
 
 const StaticImg = "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2007/2/28/0/ei0914_spaghetti.jpg.rend.hgtvcom.406.305.suffix/1396634731643.jpeg";
