@@ -8,6 +8,7 @@ import { View,
 
 import ListItem from './listItem';
 import SearchComponent from './SearchComponent';
+import SplashScreen from './SplashScreen';
 
 const StaticImg = "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2007/2/28/0/ei0914_spaghetti.jpg.rend.hgtvcom.406.305.suffix/1396634731643.jpeg";
 
@@ -23,20 +24,42 @@ const recipes = [
 ];
 
 class HomeScreen extends Component {
+  _isMounted=false;
+  constructor(props){
+    super(props);
+    this.state={
+      FirstLoad:true
+    }
+  }
+  componentDidMount() {
+    this._isMounted = true;
+    var myP=new Promise(resolve => setTimeout(resolve, 6000));
+    myP.then(()=>{
+      if(this._isMounted){
+      this.setState({FirstLoad:false})}
+    })
+  }
+
+  componentWillUnmount() {
+    this._isMounted = false;
+  }
   render() {
+    if(this.state.FirstLoad){
+      return (<SplashScreen></SplashScreen>)
+    }
     return (
       <SafeAreaView style={styles.container}>
         <View>
           <SearchComponent />
         </View>
-        <ScrollView>
+        
           <FlatList
             numColumns={2} 
             data={recipes}
             keyExtractor={(item, index) => index.toString()}
             renderItem= {( {item} ) => (<ListItem recipes={item}/>)}>
           </FlatList>
-        </ScrollView>
+
       </SafeAreaView>
     );
   } 

@@ -5,9 +5,7 @@ class SplashScreen extends Component {
   render() {
   return (
     <View style= {styles.container}>
-      <TouchableOpacity>
         <Image style={styles.splashImg} source={require('./img/Homescreen.jpg')}/>
-      </TouchableOpacity>
     </View>
   );
   }

@@ -20,6 +20,10 @@ Apart from this, best way to learn any concept is to implement it in real life. 
 This application is for anyone who is worried about their health and diet in their everyday lives. Also, for individuals who are weary of the same old recipes and flavours and want to try something new while maintaining their health, this app allows them to search among over 2 million dishes, which is a significant quantity.
 <p>&nbsp;</p>
 
+## Features and User Interface
+----
+
+
 ## 📊 Data source
 ----
 Data used in whole applcation comes from [API](https://api.edamam.com/).
