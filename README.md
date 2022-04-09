@@ -7,6 +7,7 @@
 - [🎨 User Interface and design](#🎨-user-interface-and-design)
 - [📊 Data source](#📊-data-source)
 - [📦 Getting started](#📦-getting-started)
+- [🚀 References](#🚀-references)
 - [🗣 About Me](#🗣-about-me)
 - [Footnote 🤗](#footnote-🤗)
 <p>&nbsp;</p>
@@ -87,7 +88,16 @@ $ npm install react-native-table-component
 ```
 expo start
 ```
-After ```expo start``` run it on browser with localhost server and make a tunnel. After successful connection of tunnel scan the QR code to run it on your device.
+After ```expo start``` run it on browser with localhost server. You will see screen on browser as below. On bottom left corner there are three options Tunnel, LAN and local. Default option is LAN but to run an application we need to switch to Tunnel mode. After successful connection of tunnel scan the QR code to run it on your device.
+![Localhost server Screen](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Tunnel.PNG)
+
+<p>&nbsp;</p>
+
+## 🚀 References
+- [Geeting Started With React Native](https://reactnative.dev/docs/getting-started)
+- [Getting Started with Redux](https://redux.js.org/introduction/getting-started)
+- [Table Component](https://www.npmjs.com/package/react-native-table-component)
+
 <p>&nbsp;</p>
 
 ## 🗣 About Me
