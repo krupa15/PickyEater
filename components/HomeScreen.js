@@ -58,7 +58,7 @@ class HomeScreen extends Component {
           d.push({
             name: value.recipe.label,
             type: value.recipe.dishType,
-            calories: value.recipe.calories,
+            calories: Number((value.recipe.calories).toFixed(3)),
             ingredients: value.recipe.ingredients.length,
             itemImg: value.recipe.image
           });
@@ -94,7 +94,6 @@ class HomeScreen extends Component {
           keyExtractor={(item, index) => index.toString()}
           renderItem={({ item }) => (<ListItem recipes={item} />)}>
         </FlatList>
-
       </SafeAreaView>
     );
   }

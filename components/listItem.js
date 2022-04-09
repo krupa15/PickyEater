@@ -6,11 +6,11 @@ class ListItem extends Component {
     const { name, type, calories, ingredients, itemImg} = this.props.recipes 
   return (
     <View style= {styles.listContainer}>
-      <Image source={{ uri: itemImg ,width:50,height:50}}/>
+      <Image style={styles.itemImg} source={{ uri: itemImg ,width:50,height:50}}/>
       <Text style= {styles.itemName}>{ name }</Text>
       <Text style= {styles.itemType}>{ type }</Text>
-      <Text style= {styles.itemCalIng}>{ calories }</Text>
-      <Text style= {styles.itemCalIng}>{ ingredients }</Text>
+      <Text>{ calories } Calories</Text>
+      <Text>{ ingredients } Ingredients</Text>
     </View>
   );
   }
@@ -21,15 +21,21 @@ const styles = StyleSheet.create({
     margin: 5,
     width: '48%',  
   },
+  itemImg: {
+    width: '95%',
+    height: '70%',
+    marginBottom: 5
+  },
   itemName: {
     fontSize: 14,
     fontWeight: "bold",
+    textTransform: 'capitalize'
   },
   itemType: {
     fontSize: 12,
+    textTransform: 'capitalize',
+    fontWeight: 'bold'
   },
-  itemCalIng: {
-  }
 });
 
 export default ListItem;
