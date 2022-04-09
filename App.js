@@ -9,12 +9,6 @@ import SplashScreen from './components/SplashScreen';
 
 const Stack = createNativeStackNavigator();
 export default function App() {
-  /*const componentDidMount = () => {
-    setTimeout(() => {
-      NavigationActions.navigate('homeScreen'); 
-    }, 2000); 
-    <Image style={styles.homeScreen} source={require('./components/img/Mobile-Homescreen.jpg')} />
-  };*/
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>  

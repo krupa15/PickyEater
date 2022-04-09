@@ -1,5 +1,11 @@
 # PickyEater
 
+![commit](https://img.shields.io/github/commit-activity/m/krupa15/PickyEater)
+![Issues](https://img.shields.io/github/issues/krupa15/PickyEater)
+![Fork](https://img.shields.io/github/forks/krupa15/PickyEater?style=social)
+![Watch](https://img.shields.io/github/watchers/krupa15/PickyEater?style=social)
+
+
 ## Table of Contents
 - [📗 About this Application](#📗-about-this-application)
 - [🏗 Introduction](#🏗-introduction)
@@ -8,8 +14,10 @@
 - [📊 Data source](#📊-data-source)
 - [📦 Getting started](#📦-getting-started)
 - [🚀 References](#🚀-references)
-- [🗣 About Me](#🗣-about-me)
-- [Footnote 🤗](#footnote-🤗)
+- [Future Ideas](#future-ideas)
+- [How to Contribute](#how-to-contribute)
+- [Contact Information](#contact-information)
+- [©️ Copyright Information](#©️-copyright-information)
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
@@ -59,36 +67,40 @@ Data used in whole applcation comes from [API](https://api.edamam.com/).
 
 ## 📦 Getting started
 
+## Installation Instruction
+
+First you should install latest version of [node.js](https://nodejs.org/en/download/) as per your operating environment.
 ### Clone the Application
 ```
 git@github.com:krupa15/PickyEater.git
 ```
 Or you can use below link also:
 ```
-$ https://github.com/krupa15/PickyEater
-$ cd PickyEater
+https://github.com/krupa15/PickyEater
+cd PickyEater
 ```
 
 ### Installing Dependencis  
 ```
-$ npm install -g expo-cli
+npm install -g expo-cli
 ```
 
 ### Other downloads
 Top Navigation Bar
 ```
-$ npm install @react-navigation/material-top-tabs react-native-tab-view
-$ expo install react-native-pager-view
+npm install @react-navigation/material-top-tabs react-native-tab-view
+expo install react-native-pager-view
 ```
 Table Component
 ```
-$ npm install react-native-table-component
+npm install react-native-table-component
 ```
-### Run Application
+## Run Application
 ```
 expo start
 ```
 After ```expo start``` run it on browser with localhost server. You will see screen on browser as below. On bottom left corner there are three options Tunnel, LAN and local. Default option is LAN but to run an application we need to switch to Tunnel mode. After successful connection of tunnel scan the QR code to run it on your device.
+<p>&nbsp;</p>
 ![Localhost server Screen](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Tunnel.PNG)
 
 <p>&nbsp;</p>
@@ -100,7 +112,35 @@ After ```expo start``` run it on browser with localhost server. You will see scr
 
 <p>&nbsp;</p>
 
-## 🗣 About Me
+## Future Ideas
+- Implementation of share button to share any recipe
+- Implement login and signup functionalities to add recipes to wishlist 
+- User can upload their own recipes which should be verified by admin first
+- Recommandation based on previous search
+- Provide like and comments section in each recipes so that users can like and comment each other's recipe
+- Open forum to ask general question 
+<p>&nbsp;</p>
+
+## How to Contribute
+This is a free and open-sourcesource initiative. Anyone can make a contribution based on future ideas. If there are any suggestions that are not included in future ideas, they can be made. Also, if the future ideas presented are not applicable to this application and are not beneficial to the user, one can make a proposal. If you want to help with development, you can look at the manifest of files listed below to get an understanding of what each file is about.
+
+## Manifest
+
+- README.md ---> This markdown file which you are currently reading with all relevant description related to application 
+- App.js    ---> Main file from where execution starts
+- components ---> Folder which contains all screens of application, components and images
+    - SplashScreen.js ---> A splash screen for 6 seconds which helps to load data
+    - HomeScreen.js ---> First screen from where you can search about any recipe
+    - DetailScreen.js ---> Screen with all health label, nutririon facts and ingredients
+    - SearchComponent ---> It is the top bar in every screens for search by keywords
+    - HealthLabels.js ---> Component for health label in DetailScreen.js
+    - Nutririons.js ---> Component for health label in DetailScreen.js
+    - Ingredients.js ---> Component for health label in DetailScreen.js
+    - listItem.js ---> To bind data in flatlit in HomeScreen.js
+    - img ---> folder which contains images used in application
+<p>&nbsp;</p>
+
+## Contact Information
 [Portfolio](http://www.krupa.wolknetz.com/) | [Github](https://github.com/krupa15) | [Behance](https://www.behance.net/krupapatel99)
 
 Connect with me : [LinkedIn](https://www.linkedin.com/in/krupa-patel-wd/) 
@@ -108,5 +148,7 @@ Connect with me : [LinkedIn](https://www.linkedin.com/in/krupa-patel-wd/)
 Email : krupa94272@gmail.com
 <p>&nbsp;</p>
 
-## Footnote 🤗
-This project is part of my portfolio and academics. So, any feedback will be appreciated which helps me to improve my technical skills as well as to grow it as a business idea. Thank you for your valuable time.
+## ©️ Copyright Information
+This is a free and open source project. Anyone can use it or anyone can contribute in it.
+#### PS 🤗
+This project is part of my portfolio and academics. So, any feedback will be appreciated which helps me to improve my technical skills as well as to grow it as a business idea. Thank you for your valuable time. ❤️
