@@ -26,6 +26,7 @@
 
 ![PickyEater - A React Native App](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Intro.jpg)
 <p>&nbsp;</p>
+
 *A healthy diet helps to protect against malnutrition in all its forms, as well as non-communicable diseases (NCDs), including diabetes, heart disease, stroke, and cancer. An unhealthy diet and lack of physical activity are leading global risks to health. Nowadays, people are consuming foods with high fat, calories, sodium and many of them do not have enough fruits, vegetables, and other dietary fiber such as whole-grain* - World Health Organization(WHO)
 <p>&nbsp;</p>
 
