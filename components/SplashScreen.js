@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
-import { View, StyleSheet, Image, Dimensions } from 'react-native';
+import { View, StyleSheet, Image, Dimensions, TouchableOpacity } from 'react-native';
 
 class SplashScreen extends Component {
   render() {
   return (
     <View style= {styles.container}>
-      <Image style={styles.splashImg} source={require('./img/Homescreen.jpg')}/>
+      <TouchableOpacity>
+        <Image style={styles.splashImg} source={require('./img/Homescreen.jpg')}/>
+      </TouchableOpacity>
     </View>
   );
   }

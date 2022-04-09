@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { View, StyleSheet, ScrollView } from 'react-native';
-import { Table, Row} from 'react-native-table-component';
+import { Table, Row } from 'react-native-table-component';
 
 class Nutritions extends Component {
   render() {
