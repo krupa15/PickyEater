@@ -6,7 +6,7 @@ class ListItem extends Component {
     const { name, type, calories, ingredients, itemImg} = this.props.recipes 
   return (
     <View style= {styles.listContainer}>
-      <Image source={{ uri: itemImg }}/>
+      <Image source={{ uri: itemImg ,width:50,height:50}}/>
       <Text style= {styles.itemName}>{ name }</Text>
       <Text style= {styles.itemType}>{ type }</Text>
       <Text style= {styles.itemCalIng}>{ calories }</Text>
