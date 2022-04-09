@@ -1,7 +1,23 @@
 # PickyEater
 
+## Table of Contents
+- [📗 About this Application](#📗-about-this-application)
+- [🏗 Introduction](#🏗-introduction)
+- [🏆 Features](#🏆-features)
+- [🎨 User Interface and design](#🎨-user-interface-and-design)
+- [📊 Data source](#📊-data-source)
+- [📦 Getting started](#📦-getting-started)
+- [🗣 About Me](#🗣-about-me)
+- [Footnote 🤗](#footnote-🤗)
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
 ## 📗 About this Application
 ----
+<p>&nbsp;</p>
+
+![PickyEater - A React Native App](/PickyEater/UserInterface/Intro.jpg)
+<p>&nbsp;</p>
 *A healthy diet helps to protect against malnutrition in all its forms, as well as non-communicable diseases (NCDs), including diabetes, heart disease, stroke, and cancer. An unhealthy diet and lack of physical activity are leading global risks to health. Nowadays, people are consuming foods with high fat, calories, sodium and many of them do not have enough fruits, vegetables, and other dietary fiber such as whole-grain* - World Health Organization(WHO)
 
 >The food you eat can be either the safest and most powerful form of medicine or the slowest form of Poison. - Ann Wigmore
