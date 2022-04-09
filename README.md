@@ -18,8 +18,10 @@
 ![PickyEater - A React Native App](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Intro.jpg)
 <p>&nbsp;</p>
 *A healthy diet helps to protect against malnutrition in all its forms, as well as non-communicable diseases (NCDs), including diabetes, heart disease, stroke, and cancer. An unhealthy diet and lack of physical activity are leading global risks to health. Nowadays, people are consuming foods with high fat, calories, sodium and many of them do not have enough fruits, vegetables, and other dietary fiber such as whole-grain* - World Health Organization(WHO)
+<p>&nbsp;</p>
 
 >The food you eat can be either the safest and most powerful form of medicine or the slowest form of Poison. - Ann Wigmore
+<p>&nbsp;</p>
 
 This application is implemented in React Native (build with expo and Redux). It is designed for both iOS and Android as it is cross-platform application. Apart from this high fidelity mockups are designed in AdobeXD.
 <p>&nbsp;</p>
