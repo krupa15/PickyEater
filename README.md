@@ -20,9 +20,23 @@ Apart from this, best way to learn any concept is to implement it in real life. 
 This application is for anyone who is worried about their health and diet in their everyday lives. Also, for individuals who are weary of the same old recipes and flavours and want to try something new while maintaining their health, this app allows them to search among over 2 million dishes, which is a significant quantity.
 <p>&nbsp;</p>
 
-## Features and User Interface
+## 🏆 Features
 ----
+- Splash Screen
+- Search over 2 million+ recipes
+- Can use any keword for search such as apple, salad, soup, cookies, low calories, vegetarian and so on
+- Get health labels like vegan, peanut-free, Egg-free, Sesame Free and so on
+- Get details about nutrition 
+- Get list of ingredients 
+- Get a full recipe of a dish
+- Get a type such as dessert, soup, salad and so on
+<p>&nbsp;</p>
 
+## 🎨 User Interface and design
+----
+- AdobeXD file for high fidelity mockup is in ```./UserInterface/PickyEater.xd```
+- Source file for logo is in ```./UserInterface/Logo.ai```
+<p>&nbsp;</p>
 
 ## 📊 Data source
 ----
@@ -64,7 +78,7 @@ expo start
 After ```expo start``` run it on browser with localhost server and make a tunnel. After successful connection of tunnel scan the QR code to run it on your device.
 <p>&nbsp;</p>
 
-## About Me
+## 🗣 About Me
 ----
 [Portfolio](http://www.krupa.wolknetz.com/) | [Github](https://github.com/krupa15) | [Behance](https://www.behance.net/krupapatel99)
 
@@ -73,6 +87,6 @@ Connect with me : [LinkedIn](https://www.linkedin.com/in/krupa-patel-wd/)
 Email : krupa94272@gmail.com
 <p>&nbsp;</p>
 
-## Footnote ❤️
+## Footnote 🤗
 ----
 This project is part of my portfolio and academics. So, any feedback will be appreciated which helps me to improve my technical skills as well as to grow it as a business idea. Thank you for your valuable time.
