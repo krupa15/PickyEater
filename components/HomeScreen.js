@@ -13,18 +13,6 @@ import ListItem from './listItem';
 import SearchComponent from './SearchComponent';
 import SplashScreen from './SplashScreen';
 import { fetchData } from '../Services/Api';
-const StaticImg = "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2007/2/28/0/ei0914_spaghetti.jpg.rend.hgtvcom.406.305.suffix/1396634731643.jpeg";
-
-const recipes = [
-  { name: "Apple Elixir Recipe", type: "Vegan | Vegetarian", calories: "854 Calories", ingredients: "10 Ingredients", itemImg: StaticImg },
-  { name: "Apple Cidar Syrup", type: "Vegan | Low-Potassium", calories: "854 Calories", ingredients: "10 Ingredients", itemImg: StaticImg },
-  { name: "Double peanut Popcorn", type: "Vegan | Pescatarian", calories: "854 Calories", ingredients: "10 Ingredients", itemImg: StaticImg },
-  { name: "Peanut Butter Cookies", type: "Vegan | Kidney-Friendly", calories: "854 Calories", ingredients: "10 Ingredients", itemImg: StaticImg },
-  { name: "Apple Elixir Recipe", type: "Vegan | Vegetarian", calories: "854 Calories", ingredients: "10 Ingredients", itemImg: StaticImg },
-  { name: "Apple Cidar Syrup", type: "Vegan | Low-Potassium", calories: "854 Calories", ingredients: "10 Ingredients", itemImg: StaticImg },
-  { name: "Double peanut Popcorn", type: "Vegan | Pescatarian", calories: "854 Calories", ingredients: "10 Ingredients", itemImg: StaticImg },
-  { name: "Peanut Butter Cookies", type: "Vegan | Kidney-Friendly", calories: "854 Calories", ingredients: "10 Ingredients", itemImg: StaticImg },
-];
 
 class HomeScreen extends Component {
   _isMounted = false;
@@ -58,7 +46,7 @@ class HomeScreen extends Component {
           d.push({
             name: value.recipe.label,
             type: value.recipe.dishType,
-            calories: Number((value.recipe.calories).toFixed(3)),
+            calories: Number((value.recipe.calories).toFixed(2)),
             ingredients: value.recipe.ingredients.length,
             itemImg: value.recipe.image
           });

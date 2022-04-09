@@ -24,7 +24,8 @@ const styles = StyleSheet.create({
   itemImg: {
     width: '95%',
     height: '70%',
-    marginBottom: 5
+    marginBottom: 5,
+    borderRadius: 10
   },
   itemName: {
     fontSize: 14,

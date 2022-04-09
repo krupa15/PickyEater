@@ -13,10 +13,9 @@
 <p>&nbsp;</p>
 
 ## 📗 About this Application
-----
 <p>&nbsp;</p>
 
-![PickyEater - A React Native App](/PickyEater/UserInterface/Intro.jpg)
+![PickyEater - A React Native App](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Intro.jpg)
 <p>&nbsp;</p>
 *A healthy diet helps to protect against malnutrition in all its forms, as well as non-communicable diseases (NCDs), including diabetes, heart disease, stroke, and cancer. An unhealthy diet and lack of physical activity are leading global risks to health. Nowadays, people are consuming foods with high fat, calories, sodium and many of them do not have enough fruits, vegetables, and other dietary fiber such as whole-grain* - World Health Organization(WHO)
 
@@ -27,7 +26,6 @@ This application is implemented in React Native (build with expo and Redux). It 
 
 
 ## 🏗 Introduction
-----
 ## Why?
 The key objective of this application is to raise awareness about how many calories and nutrients are contained by dish. So that one can maintain a healthy diet while simultaneously satisfying cravings for tasty foods. People who cook for themselves may be perplexed sometimes as to how to prepare something different. At some stage, you may become bored with the same old recipes and flavors. So that people can search by item name and get a list of possibilities with nutritional information and the entire recipe for that dish.
 Apart from this, best way to learn any concept is to implement it in real life. So, to use my basic practical knowledge about React-native from academics, I have decided to implement this project. This project is also a part of my curriculum.
@@ -37,7 +35,6 @@ This application is for anyone who is worried about their health and diet in the
 <p>&nbsp;</p>
 
 ## 🏆 Features
-----
 - Splash Screen
 - Search over 2 million+ recipes
 - Can use any keword for search such as apple, salad, soup, cookies, low calories, vegetarian and so on
@@ -49,18 +46,15 @@ This application is for anyone who is worried about their health and diet in the
 <p>&nbsp;</p>
 
 ## 🎨 User Interface and design
-----
 - AdobeXD file for high fidelity mockup is in ```./UserInterface/PickyEater.xd```
 - Source file for logo is in ```./UserInterface/Logo.ai```
 <p>&nbsp;</p>
 
 ## 📊 Data source
-----
 Data used in whole applcation comes from [API](https://api.edamam.com/).
 <p>&nbsp;</p>
 
 ## 📦 Getting started
-----
 
 ### Clone the Application
 ```
@@ -95,7 +89,6 @@ After ```expo start``` run it on browser with localhost server and make a tunnel
 <p>&nbsp;</p>
 
 ## 🗣 About Me
-----
 [Portfolio](http://www.krupa.wolknetz.com/) | [Github](https://github.com/krupa15) | [Behance](https://www.behance.net/krupapatel99)
 
 Connect with me : [LinkedIn](https://www.linkedin.com/in/krupa-patel-wd/) 
@@ -104,5 +97,4 @@ Email : krupa94272@gmail.com
 <p>&nbsp;</p>
 
 ## Footnote 🤗
-----
 This project is part of my portfolio and academics. So, any feedback will be appreciated which helps me to improve my technical skills as well as to grow it as a business idea. Thank you for your valuable time.
