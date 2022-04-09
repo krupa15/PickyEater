@@ -101,7 +101,8 @@ expo start
 ```
 After ```expo start``` run it on browser with localhost server. You will see screen on browser as below. On bottom left corner there are three options Tunnel, LAN and local. Default option is LAN but to run an application we need to switch to Tunnel mode. After successful connection of tunnel scan the QR code to run it on your device.
 <p>&nbsp;</p>
-![Localhost server Screen](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Tunnel.PNG)
+
+![Localhost Server Image](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Tunnel.PNG)
 
 <p>&nbsp;</p>
 
