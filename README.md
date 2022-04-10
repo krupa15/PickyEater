@@ -9,13 +9,19 @@
 ## Table of Contents
 - [📗 About this Application](#📗-about-this-application)
 - [🏗 Introduction](#🏗-introduction)
+    - [Why?](#why)
+    - [Intended Audience](#intended-audience)
 - [🏆 Features](#🏆-features)
 - [🎨 User Interface and design](#🎨-user-interface-and-design)
 - [📊 Data source](#📊-data-source)
 - [📦 Getting started](#📦-getting-started)
+    - [Installation Instructions](#installation-instruction)
+    - [Troubleshooting](#troubleshooting-with-dependencies-and-version)
+    - [Run Application](#run-application)
 - [🚀 References](#🚀-references)
 - [Future Ideas](#future-ideas)
 - [How to Contribute](#how-to-contribute)
+    - [Manifest](#manifest)
 - [Contact Information](#contact-information)
 - [©️ Copyright Information](#©️-copyright-information)
 <p>&nbsp;</p>
@@ -38,11 +44,11 @@ This application is implemented in React Native (build with expo and Redux). It 
 
 
 ## 🏗 Introduction
-## Why?
+### Why?
 The key objective of this application is to raise awareness about how many calories and nutrients are contained by dish. So that one can maintain a healthy diet while simultaneously satisfying cravings for tasty foods. People who cook for themselves may be perplexed sometimes as to how to prepare something different. At some stage, you may become bored with the same old recipes and flavors. So that people can search by item name and get a list of possibilities with nutritional information and the entire recipe for that dish.
 Apart from this, best way to learn any concept is to implement it in real life. So, to use my basic practical knowledge about React-native from academics, I have decided to implement this project. This project is also a part of my curriculum.
 
-## Intended Audience
+### Intended Audience
 This application is for anyone who is worried about their health and diet in their everyday lives. Also, for individuals who are weary of the same old recipes and flavours and want to try something new while maintaining their health, this app allows them to search among over 2 million dishes, which is a significant quantity.
 <p>&nbsp;</p>
 
@@ -96,6 +102,11 @@ Table Component
 ```
 npm install react-native-table-component
 ```
+
+## Troubleshooting with dependencies and version
+```
+expo doctor --fix-dependencies
+```
 ## Run Application
 ```
 expo start
@@ -126,7 +137,7 @@ After ```expo start``` run it on browser with localhost server. You will see scr
 ## How to Contribute
 This is a free and open-sourcesource initiative. Anyone can make a contribution based on future ideas. If there are any suggestions that are not included in future ideas, they can be made. Also, if the future ideas presented are not applicable to this application and are not beneficial to the user, one can make a proposal. If you want to help with development, you can look at the manifest of files listed below to get an understanding of what each file is about.
 
-## Manifest
+### Manifest
 
 - README.md ---> This markdown file which you are currently reading with all relevant description related to application 
 - App.js    ---> Main file from where execution starts
@@ -140,6 +151,10 @@ This is a free and open-sourcesource initiative. Anyone can make a contribution 
     - Ingredients.js ---> Component for health label in DetailScreen.js
     - listItem.js ---> To bind data in flatlit in HomeScreen.js
     - img ---> folder which contains images used in application
+<p>&nbsp;</p>
+
+## Issues and Bugs
+You can find bugs, enhancements and issues in Issues section of this repository
 <p>&nbsp;</p>
 
 ## Contact Information
