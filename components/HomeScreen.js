@@ -13,19 +13,18 @@ import ListItem from './listItem';
 import SearchComponent from './SearchComponent';
 import SplashScreen from './SplashScreen';
 import { fetchData } from '../Services/Api';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import {changeData,changeRecipe,changeSearchString,changeFirst} from "../store/storeAction";
 
 class HomeScreen extends Component {
   _isMounted = false;
   constructor(props) {
     super(props);
-    this.state = {
-      FirstLoad: true,
-      Data: []
-    }
+    this.handler = this.fetch.bind(this);
   }
-  async componentDidMount() {
-    this._isMounted = true;
-    var data = await fetchData("vegitarian").then((data)=>{
+  async fetch(string){
+    var data = await fetchData(string).then((data)=>{
       if (data === 0) {
         var dummy = []
         recipes.forEach((element) => {
@@ -34,11 +33,12 @@ class HomeScreen extends Component {
             type: element.type,
             calories: element.calories,
             ingredients: element.ingredients,
-            itemImg: element.itemImg
+            itemImg: element.itemImg,
+            id:"dummy"
           });
         });
-        this.setState({Data:dummy});
-        return dummy
+        this.props.changeData(dummy);
+        
       }
       else {
         var d = []
@@ -48,19 +48,23 @@ class HomeScreen extends Component {
             type: value.recipe.dishType,
             calories: Number((value.recipe.calories).toFixed(2)),
             ingredients: value.recipe.ingredients.length,
-            itemImg: value.recipe.image
+            itemImg: value.recipe.image,
+            id: value.recipe.uri.split("#recipe_")[1]
           });
         }
         );
-        this.setState({Data:d})
-        return d;
+        this.props.changeData(d);
       }
     });
+  }
+  async componentDidMount() {
+    this._isMounted = true;
+    await this.fetch("vegan");
     var p=new Promise((resolve)=>{
-      setInterval(resolve,6000);
+      setInterval(resolve,2000);
     });
     p.then(()=>{
-      this.setState({FirstLoad:false});
+      this.props.changeFirst(false);
     });
   }
 
@@ -68,21 +72,23 @@ class HomeScreen extends Component {
     this._isMounted = false;
   }
   render() {
-    if (this.state.FirstLoad) {
+    if (this.props.store.FirstLoad) {
       return (<SplashScreen></SplashScreen>)
     }
     return (
-      <SafeAreaView style={styles.container}>
+      <View style={styles.container}>
         <View>
-          <SearchComponent />
+          <SearchComponent handler = {this.handler} />
         </View>
+        <View>
         <FlatList
           numColumns={2}
-          data={this.state.Data}
+          data={this.props.store.Data}
           keyExtractor={(item, index) => index.toString()}
-          renderItem={({ item }) => (<ListItem recipes={item} />)}>
+          renderItem={({ item }) => (<ListItem navigation={this.props.navigation} recipes={item} />)}>
         </FlatList>
-      </SafeAreaView>
+        </View>
+      </View>
     );
   }
 }
@@ -91,11 +97,21 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "white",
-    marginTop: StatusBar.currentHeight,
+    marginTop: StatusBar.currentHeight?StatusBar.currentHeight:45,
     width: Dimensions.get('window').width,
     marginLeft: 2,
-    marginRight: 2
+    marginRight: 2,
   },
 });
 
-export default HomeScreen;
+const mapStateToProps = (state) => {
+  const { store } = state;
+  return { store }
+};
+
+const mapDispatchToProps = dispatch => (
+  bindActionCreators({
+    changeData,changeSearchString,changeRecipe,changeFirst
+  }, dispatch)
+);
+export default connect(mapStateToProps,mapDispatchToProps)(HomeScreen);

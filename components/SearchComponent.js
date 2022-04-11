@@ -7,15 +7,18 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import {changeData,changeRecipe,changeSearchString,changeFirst} from "../store/storeAction";
 
 class SearchComponent extends Component {
   render() {
     return (
       <View style={styles.searchSection}>
         <Image style={styles.logo} source={require('./img/logo.png')} /><View style={styles.borderStyle}>
-          <TextInput style={styles.inputStyle} onChangeText={(value) => { console.log(value) }} placeholder="Search here"></TextInput>
+          <TextInput style={styles.inputStyle} onChangeText={(value) => { this.props.changeSearchString(value) }} placeholder="Search here"></TextInput>
         </View>
-        <TouchableOpacity style={styles.buttonStyle} onPress={() => navigation.navigate("Detail")}>
+        <TouchableOpacity style={styles.buttonStyle} onPress={() =>{this.props.handler(this.props.store.searchString)}}>
           <Text style={styles.buttonText}>Search</Text>
         </TouchableOpacity>
       </View>
@@ -60,5 +63,14 @@ const styles = StyleSheet.create({
     padding: 12,
   }
 });
+const mapStateToProps = (state) => {
+  const { store } = state;
+  return { store }
+};
 
-export default SearchComponent;
+const mapDispatchToProps = dispatch => (
+  bindActionCreators({
+    changeData,changeSearchString,changeRecipe,changeFirst
+  }, dispatch)
+);
+export default connect(mapStateToProps,mapDispatchToProps)(SearchComponent);

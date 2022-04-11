@@ -1,31 +1,36 @@
 import React, {Component} from 'react';
 import { View, StyleSheet, ScrollView } from 'react-native';
 import { Table, Row} from 'react-native-table-component';
-
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { changeData, changeRecipe, changeSearchString, changeFirst,changeSelected } from "../store/storeAction";
 class HealthLabels extends Component {
-  render() {
-  const state = this.state;
-  const tableData = [];
+  constructor(props){
+    super(props);
+    this.tableData = [];
     for (let i = 0; i < 30; i += 1) {
       const rowData = [];
       for (let j = 0; j < 2; j += 1) {
         rowData.push(`${i}${j}`);
       }
-      tableData.push(rowData);
+      this.tableData.push(rowData);
     }
+  }
+  render() {
+   var row=[];
+   (this.props.store.selectedData.health.length>1?this.props.store.selectedData.health:this.tableData).forEach((rowData, index) => {
+    row.push(<Row
+      data={[rowData]}
+      style={styles.rowHeight}
+      textStyle={styles.textCustom}
+    />)
+   });
   return (
     <ScrollView style = {styles.container}>
         <View style= {styles.tableContainer}>
             <Table borderStyle={{borderWidth: 1, borderColor: '#ebebeb'}}>
-                {
-                  tableData.map((rowData, index) => (
-                    <Row
-                      key={index}
-                      data={rowData}
-                      style={[styles.rowHeight, index%2 && {backgroundColor: 'white'}]}
-                      textStyle={styles.textCustom}
-                    />
-                  ))
+                { 
+                 row
                 }
             </Table>
     </View>
@@ -51,5 +56,14 @@ const styles = StyleSheet.create({
         fontSize: 16,
     }
 });
+const mapStateToProps = (state) => {
+  const { store } = state;
+  return { store }
+};
 
-export default HealthLabels;
+const mapDispatchToProps = dispatch => (
+  bindActionCreators({
+    changeData, changeSearchString, changeRecipe, changeFirst,changeSelected
+  }, dispatch)
+);
+export default connect(mapStateToProps, mapDispatchToProps)(HealthLabels);

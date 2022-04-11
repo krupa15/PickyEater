@@ -13,3 +13,12 @@ export const fetchData = async(search_string) => {
         return 0;
     }
 }
+export const fetchRecipeData = async(search_string) => {
+    try {
+        const response = await axios.get(`https://api.edamam.com/api/recipes/v2/${search_string}?type=public&app_id=${APP_ID}&app_key=${APP_KEY}`);
+        return response.data;
+    } catch (error) {
+        
+        return 0;
+    }
+}
