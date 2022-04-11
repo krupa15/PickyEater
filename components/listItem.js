@@ -46,9 +46,26 @@ class ListItem extends Component {
     });
   }
   render() {
+    /* Initialize the parameters used in List */
     const { name, type, calories, ingredients, itemImg, id } = this.props.recipes;
     return (
       <View style={this.styles.listContainer}>
+        {/**
+         * onPress
+         * Purpose: Navigate to details screen
+         * Parameter(s):
+         * <1> changeUrl : Url of clicked recipe on HomeScreen
+         * <2> changeRecipe : Pass ID to pass the data of clicked recipe
+         * 
+         * Preconditions(s):
+         * <1> changeUrl must be defined
+         * <2> changeRecipe must be defined
+         * <3> Initialize parameters 
+         * 
+         * Return(S): N/A  
+         * 
+         * Side effect(s): Pass the particular data with ID
+         */}
         <TouchableOpacity onPress={() => { this.props.changeUrl(itemImg); this.props.changeRecipe(id); this.props.navigation.navigate("Detail") }}>
           <Image style={this.styles.itemImg} source={{ uri: itemImg }} />
           <Text style={this.styles.itemName}>{name}</Text>
@@ -62,11 +79,39 @@ class ListItem extends Component {
   }
 }
 
+/**
+ * mapStateToProps
+ * Purpose: To map properties for states
+ * Parameter(s):
+ * <1> state: It will provide a state of changes
+ * 
+ * Preconditions(s):
+ * <1> A function call from connect on line no. 118
+ * 
+ * Return(S): store  
+ * 
+ * Side effect(s): N/A
+ */
 const mapStateToProps = (state) => {
   const { store } = state;
   return { store }
 };
 
+/**
+ * mapDispatchToProps
+ * Purpose: To bind redux action to dispatch
+ * 
+ * Parameter(s):
+ * <1> dispatch: bind the value of changes
+ * 
+ * Preconditions(s):
+ * <1> A function call from connect on line no. 118
+ * 
+ * Return(S): N/A
+ * 
+ * Side effect(s):
+ * <1> Bind values for each parameters
+ */
 const mapDispatchToProps = dispatch => (
   bindActionCreators({
     changeData, changeSearchString, changeRecipe, changeFirst, changeUrl

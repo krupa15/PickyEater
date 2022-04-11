@@ -110,6 +110,10 @@ expo-linking (Give a web link to button)
 ```
 expo install expo-linking
 ```
+axios (HTTP client for the browser and node.js - used to call API in this project)
+```
+npm install axios
+```
 
 ## Troubleshooting with dependencies and version
 ```

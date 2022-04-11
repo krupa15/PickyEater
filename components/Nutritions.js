@@ -26,6 +26,7 @@ class Nutritions extends Component {
   }
   render() {
     var row=[];
+    /** Fetch data of Nutritions when it's clicked on Tab Navigator from DetailScreen.js and stores in row */
    (this.props.store.selectedData.nutri.length>1?this.props.store.selectedData.nutri:this.tableData).forEach((rowData, index) => {
     row.push(<Row
       data={[rowData]}
@@ -36,6 +37,7 @@ class Nutritions extends Component {
     return (
       <ScrollView style={styles.container}>
         <View style={styles.tableContainer}>
+          {/** Displays the data from array 'row' in render */}
           <Table borderStyle={{ borderWidth: 1, borderColor: '#ebebeb' }}>
             {
               row
@@ -64,11 +66,40 @@ const styles = StyleSheet.create({
     fontSize: 16,
   }
 });
+
+/**
+ * mapStateToProps
+ * Purpose: To map properties for states
+ * Parameter(s):
+ * <1> state: It will provide a state of changes
+ * 
+ * Preconditions(s):
+ * <1> A function call from connect on line no. 118
+ * 
+ * Return(S): store  
+ * 
+ * Side effect(s): N/A
+ */
 const mapStateToProps = (state) => {
   const { store } = state;
   return { store }
 };
 
+/**
+ * mapDispatchToProps
+ * Purpose: To bind redux action to dispatch
+ * 
+ * Parameter(s):
+ * <1> dispatch: bind the value of changes
+ * 
+ * Preconditions(s):
+ * <1> A function call from connect on line no. 118
+ * 
+ * Return(S): N/A
+ * 
+ * Side effect(s):
+ * <1> Bind values for each parameters
+ */
 const mapDispatchToProps = dispatch => (
   bindActionCreators({
     changeData, changeSearchString, changeRecipe, changeFirst, changeSelected

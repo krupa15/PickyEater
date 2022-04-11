@@ -2,7 +2,7 @@
  * file: SplashScreen.js
  * author: Krupa Patel <kpf097@uregina.ca>
  * version: 0.1
- * date-created: March-20-2022
+ * date-created: April-8-2022
  * last-modified: April-11-2022
  */
 import React, {Component} from 'react';
