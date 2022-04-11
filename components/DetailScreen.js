@@ -114,7 +114,6 @@ class DetailScreen extends Component {
     this._isMounted = false;
   }
   render() {
-    console.log(this.props.store.selectedUrl);
     return (
       <SafeAreaView style={styles.fullContainer}>
         <View style={styles.searchSection}>
@@ -154,12 +153,13 @@ const styles = StyleSheet.create({
   },
   imgStyle: {
     width: Dimensions.get('window').width,
+    height: 360,
   },
   nameStyle: {
     fontSize: 18,
     fontWeight: "bold",
     marginLeft: 10,
-    marginTop: 3,
+    marginTop: 10,
   },
   typeStyle: {
     fontSize: 14,
