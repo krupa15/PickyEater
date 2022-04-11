@@ -1,3 +1,10 @@
+/**
+ * file: DeatailScreen.js
+ * author: Krupa Patel <kpf097@uregina.ca>
+ * version: 0.1
+ * date-created: March-28-2022
+ * last-modified: April-11-2022
+ */
 import React, {Component} from 'react';
 import { Text,
         View,
@@ -30,8 +37,7 @@ const Tab = createMaterialTopTabNavigator();
 class DetailScreen extends Component {
   _isMounted = false;
   constructor(props){
-    super(props);
-    
+    super(props); 
   }
   async componentDidMount() {
     this._isMounted = true;

@@ -1,3 +1,10 @@
+/**
+ * file: App.js
+ * author: Krupa Patel <kpf097@uregina.ca>
+ * version: 0.1
+ * date-created: March-20-2022
+ * last-modified: April-11-2022
+ */
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
 import { NavigationContainer, NavigationActions } from '@react-navigation/native';
@@ -22,7 +29,6 @@ export default function App() {
       </NavigationContainer>
     </Provider>
   );
-
 }
 
 const styles = StyleSheet.create({

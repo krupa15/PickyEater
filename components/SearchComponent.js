@@ -1,3 +1,10 @@
+/**
+ * file: SearchComponent.js
+ * author: Krupa Patel <kpf097@uregina.ca>
+ * version: 0.1
+ * date-created: April-07-2022
+ * last-modified: April-11-2022
+ */
 import React, { Component } from 'react';
 import {
   Text,
