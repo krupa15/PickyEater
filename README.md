@@ -30,7 +30,7 @@
 ## 📗 About this Application
 <p>&nbsp;</p>
 
-![PickyEater - A React Native App](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Intro.jpg)
+![PickyEater - A React Native App](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Intro.jpg)
 <p>&nbsp;</p>
 
 *A healthy diet helps to protect against malnutrition in all its forms, as well as non-communicable diseases (NCDs), including diabetes, heart disease, stroke, and cancer. An unhealthy diet and lack of physical activity are leading global risks to health. Nowadays, people are consuming foods with high fat, calories, sodium and many of them do not have enough fruits, vegetables, and other dietary fiber such as whole-grain* - World Health Organization(WHO)
@@ -122,7 +122,7 @@ expo start
 After ```expo start``` run it on browser with localhost server. You will see screen on browser as below. On bottom left corner there are three options Tunnel, LAN and local. Default option is LAN but to run an application we need to switch to Tunnel mode. After successful connection of tunnel scan the QR code to run it on your device.
 <p>&nbsp;</p>
 
-![Localhost Server Image](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Tunnel.PNG)
+![Localhost Server Image](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Tunnel.PNG)
 
 <p>&nbsp;</p>
 
