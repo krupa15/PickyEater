@@ -11,14 +11,19 @@ import { Text,
 import * as Linking from 'expo-linking';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
-import SearchComponent from './SearchComponent';
 import HealthLabels from './HealthLabels';
 import Ingredients from './Ingredients';
 import Nutritions from './Nutritions';
 import { fetchRecipeData } from '../Services/Api';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { changeData, changeRecipe, changeSearchString, changeFirst,changeSelected } from "../store/storeAction";
+
+import { changeData,
+         changeRecipe,
+         changeSearchString,
+         changeFirst,
+         changeSelected,
+         changeUrl } from "../store/storeAction";
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -97,7 +102,6 @@ class DetailScreen extends Component {
         </Tab.Navigator>
         <View style={styles.bottomFix}>
           <TouchableOpacity style={styles.bottomBtn} onPress={()=>{
-            console.log("we are here");
             Linking.openURL(this.props.store.selectedData.url).catch(err => console.error('An error occurred', err));
           }}>
             <Text style={styles.bottomTxt}> SEE FULL RECIPE </Text>
@@ -157,7 +161,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => (
   bindActionCreators({
-    changeData, changeSearchString, changeRecipe, changeFirst,changeSelected
+    changeData, changeSearchString, changeRecipe, changeFirst,changeSelected, changeUrl
   }, dispatch)
 );
 export default connect(mapStateToProps, mapDispatchToProps)(DetailScreen);

@@ -1,19 +1,27 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { Text,
+         View,
+         StyleSheet,
+         Image,
+         TouchableOpacity } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { changeData, changeRecipe, changeSearchString, changeFirst, changeUrl } from "../store/storeAction";
+import { changeData,
+         changeRecipe,
+         changeSearchString,
+         changeFirst,
+         changeUrl } from "../store/storeAction";
 
 class ListItem extends Component {
   constructor(props) {
     super(props);
     this.styles = StyleSheet.create({
       listContainer: {
-        margin: 5,
-        width: '48%'
+        margin: 6,
+        width: '48%',
       },
       itemImg: {
-        width: '90%',
+        width: '94%',
         height: 200,
         marginBottom: 5,
         borderRadius: 10
@@ -33,7 +41,6 @@ class ListItem extends Component {
   render() {
     const { name, type, calories, ingredients, itemImg, id } = this.props.recipes;
     return (
-
       <View style={this.styles.listContainer}>
         <TouchableOpacity onPress={() => { this.props.changeUrl(itemImg); this.props.changeRecipe(id); this.props.navigation.navigate("Detail") }}>
           <Image style={this.styles.itemImg} source={{ uri: itemImg }} />
@@ -58,4 +65,5 @@ const mapDispatchToProps = dispatch => (
     changeData, changeSearchString, changeRecipe, changeFirst, changeUrl
   }, dispatch)
 );
+
 export default connect(mapStateToProps, mapDispatchToProps)(ListItem);

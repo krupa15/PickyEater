@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
-import { View, StyleSheet, Image, Dimensions, TouchableOpacity } from 'react-native';
+import { View,
+         StyleSheet,
+         Image,
+         Dimensions } from 'react-native';
 
 class SplashScreen extends Component {
   render() {

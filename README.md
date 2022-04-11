@@ -102,6 +102,14 @@ Table Component
 ```
 npm install react-native-table-component
 ```
+Redux
+```
+npm install redux
+```
+expo-linking (Give a web link to button)
+```
+expo install expo-linking
+```
 
 ## Troubleshooting with dependencies and version
 ```
@@ -151,6 +159,9 @@ This is a free and open-sourcesource initiative. Anyone can make a contribution 
     - Ingredients.js ---> Component for health label in DetailScreen.js
     - listItem.js ---> To bind data in flatlit in HomeScreen.js
     - img ---> folder which contains images used in application
+- store ---> Folder which contains files to store and pass data between screens
+    - storeAction.js ---> to store changed values
+    - storeReducer.js ---> to store state changes
 <p>&nbsp;</p>
 
 ## Issues and Bugs

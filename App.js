@@ -5,7 +5,6 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import HomeScreen from './components/HomeScreen';
 import DetailScreen from './components/DetailScreen.js';
-import SplashScreen from './components/SplashScreen';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
@@ -27,10 +26,6 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  /**homeScreen: {
-    width: Dimensions.get('window').width,
-    height: Dimensions.get('window').height,
-  }*/
   navigationContainer: {
     backgroundColor: 'white',
   }

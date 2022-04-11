@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import {
   View,
   StyleSheet,
-  ScrollView,
-  SafeAreaView,
   FlatList,
   StatusBar,
   Dimensions
@@ -15,7 +13,11 @@ import SplashScreen from './SplashScreen';
 import { fetchData } from '../Services/Api';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import {changeData,changeRecipe,changeSearchString,changeFirst} from "../store/storeAction";
+import { changeData,
+         changeRecipe,
+         changeSearchString,
+         changeFirst,
+         changeUrl} from "../store/storeAction";
 
 class HomeScreen extends Component {
   _isMounted = false;
@@ -80,7 +82,7 @@ class HomeScreen extends Component {
         <View>
           <SearchComponent handler = {this.handler} />
         </View>
-        <View>
+        <View style={styles.flatListContainer}>
         <FlatList
           numColumns={2}
           data={this.props.store.Data}
@@ -102,6 +104,9 @@ const styles = StyleSheet.create({
     marginLeft: 2,
     marginRight: 2,
   },
+  flatListContainer: {
+    marginBottom: 80
+  }
 });
 
 const mapStateToProps = (state) => {
@@ -111,7 +116,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => (
   bindActionCreators({
-    changeData,changeSearchString,changeRecipe,changeFirst
+    changeData,changeSearchString,changeRecipe,changeFirst, changeUrl
   }, dispatch)
 );
 export default connect(mapStateToProps,mapDispatchToProps)(HomeScreen);

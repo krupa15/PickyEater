@@ -9,7 +9,12 @@ import {
 } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import {changeData,changeRecipe,changeSearchString,changeFirst} from "../store/storeAction";
+import {
+  changeData,
+  changeRecipe,
+  changeSearchString,
+  changeFirst
+} from "../store/storeAction";
 
 class SearchComponent extends Component {
   render() {
@@ -73,4 +78,5 @@ const mapDispatchToProps = dispatch => (
     changeData,changeSearchString,changeRecipe,changeFirst
   }, dispatch)
 );
+
 export default connect(mapStateToProps,mapDispatchToProps)(SearchComponent);

@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, ScrollView } from 'react-native';
+import { View,
+         StyleSheet,
+         ScrollView 
+      } from 'react-native';
 import { Table, Row } from 'react-native-table-component';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { changeData, changeRecipe, changeSearchString, changeFirst, changeSelected } from "../store/storeAction";
+import { changeData,
+         changeRecipe,
+         changeSearchString,
+         changeFirst,
+         changeSelected } from "../store/storeAction";
 
 class Nutritions extends Component {
   constructor(props){
     super(props);
     this.tableData = [];
-    for (let i = 0; i < 30; i += 1) {
-      const rowData = [];
-      for (let j = 0; j < 2; j += 1) {
-        rowData.push(`${i}${j}`);
-      }
-      this.tableData.push(rowData);
-    }
   }
   render() {
     var row=[];
@@ -67,4 +67,5 @@ const mapDispatchToProps = dispatch => (
     changeData, changeSearchString, changeRecipe, changeFirst, changeSelected
   }, dispatch)
 );
+
 export default connect(mapStateToProps, mapDispatchToProps)(Nutritions);
