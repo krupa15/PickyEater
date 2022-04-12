@@ -147,8 +147,8 @@ After ```expo start``` run it on browser with localhost server. You will see scr
 <p>&nbsp;</p>
 
 ## 🚀 References
-- [Geeting Started With React Native](https://reactnative.dev/docs/getting-started)
-- [Expo](https://docs.expo.dev/)
+- [Getting Started with React Native](https://reactnative.dev/docs/getting-started)
+- [Getting Started with Expo](https://docs.expo.dev/)
 - [Getting Started with Redux](https://redux.js.org/introduction/getting-started)
 - [Table Component](https://www.npmjs.com/package/react-native-table-component)
 - [axios - For thr API](https://axios-http.com/docs/intro)
