@@ -131,15 +131,17 @@ After ```expo start``` run it on browser with localhost server. You will see scr
 
 ## Screenshots of User Interface
 <p float="left">
-    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/SplashScreen.PNG" width="100">
-    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Default-HomeScreen.PNG" width="100">
-    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/HomeSearch.PNG" width="100">
+    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/SplashScreen.PNG" width="300">
+    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Default-HomeScreen.PNG" width="300">
+    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/HomeSearch.PNG" width="300">
 </p>
 
-![Splash Screen](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/SplashScreen.PNG) ![Default HomeScreen](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Default-HomeScreen.PNG) ![Home Screen](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/HomeSearch.PNG)
-<p>&nbsp;</p>
-
-![Health Label](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/HealthLabel.PNG)   ![Nutritions](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Nutritions.PNG)  ![Ingredients](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Ingredients.PNG)    ![Recipe](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Ingredients.PNG)
+<p float="left">
+    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/HealthLabel.PNG" width="250">
+    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Nutritions.PNG" width="250">
+    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Ingredients.PNG" width="250">
+    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Recipe.PNG" width="250">
+</p>
 
 ## 🚀 References
 - [Geeting Started With React Native](https://reactnative.dev/docs/getting-started)
