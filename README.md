@@ -129,7 +129,11 @@ After ```expo start``` run it on browser with localhost server. You will see scr
 ![Localhost Server Image](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Tunnel.PNG)
 <p>&nbsp;</p>
 
-## Screenshots of User Interface 
+## Screenshots of User Interface
+![Splash Screen](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/SplashScreen.PNG) ![Default HomeScreen](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Default-HomeScreen.PNG) ![Home Screen](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/HomeSearch.PNG)
+<p>&nbsp;</p>
+
+![Health Label](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/HealthLabel.PNG)   ![Nutritions](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Nutritions.PNG)  ![Ingredients](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Ingredients.PNG)    ![Recipe](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Ingredients.PNG)
 
 ## 🚀 References
 - [Geeting Started With React Native](https://reactnative.dev/docs/getting-started)
