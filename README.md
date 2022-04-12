@@ -131,9 +131,10 @@ After ```expo start``` run it on browser with localhost server. You will see scr
 
 ## Screenshots of User Interface
 <p float="left">
-    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/SplashScreen.PNG" width="250">
-    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Default-HomeScreen.PNG" width="250">
-    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/HomeSearch.PNG" width="250">
+    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/SplashScreen.PNG" width="200">
+    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Default-HomeScreen.PNG" width="200">
+    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/HomeSearch.PNG" width="200">
+    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/search-2.jpeg" width="200">
 </p>
 <p>&nbsp;</p>
 <p float="left">
