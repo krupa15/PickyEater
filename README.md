@@ -137,10 +137,10 @@ After ```expo start``` run it on browser with localhost server. You will see scr
 </p>
 <p>&nbsp;</p>
 <p float="left">
-    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/HealthLabel.PNG" width="205">
-    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Nutritions.PNG" width="205">
-    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Ingredients.PNG" width="205">
-    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Recipe.PNG" width="205">
+    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/HealthLabel.PNG" width="200">
+    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Nutritions.PNG" width="200">
+    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Ingredients.PNG" width="200">
+    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Recipe.PNG" width="200">
 </p>
 
 ## 🚀 References
