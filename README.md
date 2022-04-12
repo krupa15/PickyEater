@@ -18,6 +18,7 @@
     - [Installation Instructions](#installation-instruction)
     - [Troubleshooting](#troubleshooting-with-dependencies-and-version)
     - [Run Application](#run-application)
+- [Screenshots of Application](#screenshots-of-user-interface)
 - [🚀 References](#🚀-references)
 - [Future Ideas](#future-ideas)
 - [How to Contribute](#how-to-contribute)
@@ -143,6 +144,7 @@ After ```expo start``` run it on browser with localhost server. You will see scr
     <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Ingredients.PNG" width="200">
     <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Recipe.PNG" width="200">
 </p>
+<p>&nbsp;</p>
 
 ## 🚀 References
 - [Geeting Started With React Native](https://reactnative.dev/docs/getting-started)
