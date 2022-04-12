@@ -131,16 +131,16 @@ After ```expo start``` run it on browser with localhost server. You will see scr
 
 ## Screenshots of User Interface
 <p float="left">
-    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/SplashScreen.PNG" width="300">
-    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Default-HomeScreen.PNG" width="300">
-    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/HomeSearch.PNG" width="300">
+    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/SplashScreen.PNG" width="250">
+    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Default-HomeScreen.PNG" width="250">
+    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/HomeSearch.PNG" width="250">
 </p>
-
+<p>&nbsp;</p>
 <p float="left">
-    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/HealthLabel.PNG" width="250">
-    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Nutritions.PNG" width="250">
-    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Ingredients.PNG" width="250">
-    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Recipe.PNG" width="250">
+    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/HealthLabel.PNG" width="220">
+    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Nutritions.PNG" width="220">
+    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Ingredients.PNG" width="220">
+    <img src="https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Recipe.PNG" width="220">
 </p>
 
 ## 🚀 References
