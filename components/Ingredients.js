@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   },
   tableContainer: {
     margin: 15,
-    marginBottom: 50
+    marginBottom: 50,
   },
   rowHeight: {
     height: 46,

@@ -127,8 +127,9 @@ After ```expo start``` run it on browser with localhost server. You will see scr
 <p>&nbsp;</p>
 
 ![Localhost Server Image](https://github.com/krupa15/PickyEater/blob/master/UserInterface/Doc%20Images/Tunnel.PNG)
-
 <p>&nbsp;</p>
+
+## Screenshots of User Interface 
 
 ## 🚀 References
 - [Geeting Started With React Native](https://reactnative.dev/docs/getting-started)
