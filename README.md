@@ -185,7 +185,7 @@ This is a free and open-sourcesource initiative. Anyone can make a contribution 
 <p>&nbsp;</p>
 
 ## Issues and Bugs
-You can find bugs, enhancements and issues in Issues section of this repository
+You can find bugs, enhancements and issues in [Issues](https://github.com/krupa15/PickyEater/issues) section of this repository
 <p>&nbsp;</p>
 
 ## Contact Information
