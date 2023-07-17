@@ -188,7 +188,7 @@ You can find bugs, enhancements and issues in [Issues](https://github.com/krupa1
 <p>&nbsp;</p>
 
 ## Contact Information
-[Portfolio](http://www.krupa.wolknetz.com/) | [Github](https://github.com/krupa15) | [Behance](https://www.behance.net/krupapatel99)
+[Portfolio](https://krupa15.github.io/portfolio.github.io/) | [Github](https://github.com/krupa15) | [Behance](https://www.behance.net/krupapatel99)
 
 Connect with me : [LinkedIn](https://www.linkedin.com/in/krupa-patel-wd/) 
 
